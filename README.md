@@ -1,4 +1,4 @@
-# BStaj Başvuru Scripti
+# Staj Başvuru Scripti
 
 Bu proje, Baykar Kariyer sitesinde yayınlanan **2026 Yaz Dönemi Staj** ilanlarını otomatik olarak analiz ederek  
 **Bilgisayar Mühendisliği** ve **Yazılım Mühendisliği** öğrencilerinin başvurabileceği pozisyonları tespit etmek amacıyla geliştirilmiştir.
