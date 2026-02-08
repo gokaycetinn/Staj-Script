@@ -69,9 +69,11 @@ async def scrape_page_links(page, page_num):
     for card in cards:
         href = await card.get_attribute('href')
         if href and '/acik-pozisyonlar/detay/' in href:
-            full_url = "https://kariyer.baykartech.com" + href if href.startswith('/') else href
-            if full_url not in job_links:
-                job_links.append(full_url)
+            # Sadece 2026-yaz-donemi içeren ilanları al
+            if '2026-yaz-donemi' in href.lower():
+                full_url = "https://kariyer.baykartech.com" + href if href.startswith('/') else href
+                if full_url not in job_links:
+                    job_links.append(full_url)
     
     return job_links
 
